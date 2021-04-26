@@ -1,4 +1,4 @@
-name: web deployment
+name: web-deployment
 on: [push]
 jobs:
    build: 
