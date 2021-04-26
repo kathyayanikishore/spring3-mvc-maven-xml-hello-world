@@ -1,6 +1,6 @@
 name:web deployment
 on:[push]
-jobs: 
+ jobs: 
   build: 
     runs-on: ubuntu-latest
     steps: 
