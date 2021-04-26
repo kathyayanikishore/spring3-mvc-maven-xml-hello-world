@@ -22,9 +22,19 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+    
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
+      - uses: actions/checkout@v1
+      - name: Run a one-line script
+        run: echo Hello, world!
+      - name: java version
+        run: java -version
+      - name: java version
+        run: mvn --version
+      - name: python version
+        run: python --version
+      - name: docker version
+        run: docker -version
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
